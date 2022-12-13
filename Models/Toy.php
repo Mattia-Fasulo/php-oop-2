@@ -7,6 +7,7 @@ class Toy extends Product{
     public $color;
     public $material;
     public $elettronic;
+    public $sound;
 
     public function __construct(
         Category $_category,
@@ -18,7 +19,8 @@ class Toy extends Product{
         string $_measure,
         string $_color,
         string $_material,
-        bool $_elettronic
+        bool $_elettronic,
+        bool $_sound
 
     )
     {
@@ -34,6 +36,7 @@ class Toy extends Product{
         $this->color = $_color;
         $this->material = $_material;
         $this->elettronic = $_elettronic;
+        $this->sound = $_sound;
     }
 }
 
