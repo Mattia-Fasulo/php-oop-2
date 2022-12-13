@@ -1,7 +1,7 @@
 <?php
 require_once 'Product.php';
 
-class Toy extends Product{
+class Food extends Product{
     public $flavor;
     public $weight;
     public $ingredients;
