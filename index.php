@@ -1,9 +1,10 @@
 <?php
-include __DIR__.'./Models/Category.php';
-include __DIR__.'./Models/Product.php';
-include __DIR__.'./Models/Toy.php';
-include __DIR__.'./Models/Bed.php';
-include __DIR__.'./Models/Food.php';
+require_once __DIR__.'./Models/Category.php';
+require_once __DIR__.'./Models/Product.php';
+require_once __DIR__.'./Models/Toy.php';
+require_once __DIR__.'./Models/Bed.php';
+require_once __DIR__.'./Models/Food.php';
+
 
 $products = [];
 
@@ -42,7 +43,7 @@ $products[] = $snackBones;
 $tidbits = new Food(new Category('Cat','fa-solid fa-cat'), 'Tidbits', 5.99, './img/snack-gatto.png', 'Bites for cats with functional ingredients to keep the cat in perfect shape. In resealable jar which allows you to keep the fragrance and quality of the product unchanged.', 3.5, 'Salmon', '75 g', 'Salmon, Cheese, Bluberry');
 
 $tidbits->setBrand('CaneAmico');
-// var_dump($tidbits);
+var_dump($tidbits);
 $products[] = $tidbits;
 
 // var_dump($products);
@@ -51,10 +52,10 @@ $products[] = $tidbits;
 // var_dump($batuffolo->getClassName());
 // echo $batuffolo->getCategoryIcon();
 
+// var_dump('mattia' * 3);
 
 
-
-include __DIR__ . './partials/header.php';
+require __DIR__ . './partials/header.php';
 include __DIR__ . './partials/main.php';
 include __DIR__ . './partials/footer.php';
 ?>

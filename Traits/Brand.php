@@ -1,7 +1,7 @@
 <?php 
 
 trait Brand {
-    public $brand;
+    protected $brand;
 
 
     public function getBrand(){

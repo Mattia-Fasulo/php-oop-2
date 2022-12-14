@@ -1,5 +1,5 @@
 <?php
- include './Traits/Brand.php';
+ require_once __DIR__.'/../Traits/Brand.php';
 class Product {
     use Brand;
     protected $id;
