@@ -32,6 +32,9 @@ class Food extends Product{
         $this->ingredients = $_ingredients;
     }
 
+    public function getClassName(){
+        return get_class();
+    }
 }
 
 ?>

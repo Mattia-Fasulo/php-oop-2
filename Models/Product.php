@@ -1,6 +1,7 @@
 <?php
+ include './Traits/Brand.php';
 class Product {
-
+    use Brand;
     protected $id;
     public $name;
     public $category;
@@ -8,6 +9,8 @@ class Product {
     public $urlImg;
     public $description;
     public $rate;
+
+    
 
     public function __construct(
         Category $_category,
@@ -27,7 +30,17 @@ class Product {
 
     }
 
+    public function getProductDetails(){
+        return "Product Name: $this->name, Price: $this->price, Description: $this->description";
+    }
+
+    public function getClassName(){
+        return get_class();
+    }
+
+    public function getCategoryIcon(){
+        $icon = $this->category->icon;
+        return  "<i class='$icon'></i>";
+    }
+
 }
-
-
-?>

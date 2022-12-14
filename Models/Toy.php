@@ -38,6 +38,10 @@ class Toy extends Product{
         $this->elettronic = $_elettronic;
         $this->sound = $_sound;
     }
+
+    public function getClassName(){
+        return get_class();
+    }
 }
 
 ?>

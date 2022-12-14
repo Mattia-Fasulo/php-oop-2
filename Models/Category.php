@@ -1,12 +1,14 @@
 <?php
 
 class Category {
-    protected $id;
-    public string $category;
+    
+    public string $species;
+    public string $icon;
 
-    public function __construct($_category)
+    public function __construct($_species, $_icon)
     {
-        $this->category = $_category;
+        $this->species = $_species;
+        $this->icon = $_icon;
     }
 }
 

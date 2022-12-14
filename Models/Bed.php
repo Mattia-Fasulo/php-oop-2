@@ -35,6 +35,10 @@ class Bed extends Product{
         $this->outside = $_outside;
         
     }
+
+    public function getClassName(){
+        return get_class();
+    }
 }
 
 ?>
